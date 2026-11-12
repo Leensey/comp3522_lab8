@@ -33,6 +33,8 @@ public:
     void update(Auctioneer *auctioneer);
 
     // TODO: add any getters you need (e.g. getName(), getHighestBid()) so
+    string getName() {return name;}
+    double getHighestBid() {return highest_bid;}
     // Auction can print the end-of-auction summary.
 
     friend ostream& operator<<(ostream &os, const Bidder& bidder) {
