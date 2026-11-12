@@ -10,4 +10,21 @@ void Bidder::update(Auctioneer *auctioneer) {
     //     (see Lab-08.pptx on <random> / rand())
     // If all three hold, compute the new bid and call
     // auctioneer->accept_bid(new_bid, this).
+
+    if (auctioneer->getHighestBidder() != this)
+    {
+        double new_bid = auctioneer->getHighestBid() * bid_increase_perc;
+
+        if (new_bid <= budget)
+        {
+            double random_roll = (double)rand() / RAND_MAX * 100;
+
+            if (random_roll < bid_probability)
+            {
+                cout << name << " bidded $" << new_bid << endl;
+                highest_bid = new_bid;
+                auctioneer->accept_bid(new_bid, this);
+            }
+        }
+    }
 }
