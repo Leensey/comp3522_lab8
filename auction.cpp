@@ -27,4 +27,5 @@ void Auction::simulate_auction(string item, double start_price)
     cout << "The " + item + " goes to " << auctioneer.getHighestBidder() << " for " << auctioneer.getHighestBid() << endl;
 
     auctioneer.printBidders();
+    auctioneer.reset_auctioneer();
 }
