@@ -21,9 +21,13 @@ void Bidder::update(Auctioneer *auctioneer) {
 
             if (random_roll < bid_probability)
             {
-                cout << name << " bidded $" << new_bid << endl;
+                cout << name << " bidded $" << new_bid;
+                cout << " in response to " << auctioneer->getHighestBidder() << "'s";
+                cout << " bid of " << auctioneer->getHighestBid()<< endl;
+                
                 highest_bid = new_bid;
                 auctioneer->accept_bid(new_bid, this);
+
             }
         }
     }
