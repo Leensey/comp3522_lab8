@@ -1406,3 +1406,30 @@
 {"t":1794521344484,"file":"auction.cpp","type":"replace","rangeStart":1076,"rangeEnd":1077,"text":")","textLength":1,"docVersion":451}
 {"t":1794521345134,"file":"auction.cpp","type":"insert","rangeStart":1077,"rangeEnd":1077,"text":";","textLength":1,"docVersion":452}
 {"t":1794521346165,"file":"auction.cpp","type":"file-save"}
+{"t":1794521390230,"file":"auction.cpp","type":"window-blur"}
+{"t":1794521392040,"file":"auction.cpp","type":"window-focus"}
+{"t":1794521393481,"file":"bidder.cpp","type":"insert","rangeStart":579,"rangeEnd":579,"text":"\r\n    if (auctioneer->getHighestBidder() != this)\r\n    {\r\n        double new_bid = auctioneer->getHighestBid() * bid_increase_perc;\r\n\r\n        if (new_bid <= budget)\r\n        {\r\n            double random_roll = (double)rand() / RAND_MAX * 100;\r\n\r\n            if (random_roll < bid_probability)\r\n            {\r\n                cout << name << \" bidded $\" << new_bid << endl;\r\n                highest_bid = new_bid;\r\n                auctioneer->accept_bid(new_bid, this);\r\n            }\r\n        }\r\n    }\r\n","textLength":504,"docVersion":2}
+{"t":1794521393483,"file":"bidder.hpp","type":"insert","rangeStart":1255,"rangeEnd":1255,"text":"    string getName() {return name;}\r\n    double getHighestBid() {return highest_bid;}\r\n","textLength":87,"docVersion":72}
+{"t":1794521440791,"file":"main.cpp","type":"file-open"}
+{"t":1794521519885,"file":"main.cpp","type":"window-focus"}
+{"t":1794521578197,"file":"main.cpp","type":"window-focus"}
+{"t":1794521579642,"file":"auction.cpp","type":"insert","rangeStart":1078,"rangeEnd":1078,"text":"\r\n    ","textLength":6,"docVersion":453}
+{"t":1794521580672,"file":"auction.cpp","type":"file-save"}
+{"t":1794521581034,"file":"auction.cpp","type":"insert","rangeStart":1084,"rangeEnd":1084,"text":"a","textLength":1,"docVersion":454}
+{"t":1794521581153,"file":"auction.cpp","type":"insert","rangeStart":1085,"rangeEnd":1085,"text":"u","textLength":1,"docVersion":455}
+{"t":1794521581501,"file":"auction.cpp","type":"insert","rangeStart":1086,"rangeEnd":1086,"text":"c","textLength":1,"docVersion":456}
+{"t":1794521581617,"file":"auction.cpp","type":"insert","rangeStart":1087,"rangeEnd":1087,"text":"t","textLength":1,"docVersion":457}
+{"t":1794521581673,"file":"auction.cpp","type":"insert","rangeStart":1088,"rangeEnd":1088,"text":"i","textLength":1,"docVersion":458}
+{"t":1794521581760,"file":"auction.cpp","type":"insert","rangeStart":1089,"rangeEnd":1089,"text":"o","textLength":1,"docVersion":459}
+{"t":1794521581815,"file":"auction.cpp","type":"insert","rangeStart":1090,"rangeEnd":1090,"text":"n","textLength":1,"docVersion":460}
+{"t":1794521582417,"file":"auction.cpp","type":"insert","rangeStart":1091,"rangeEnd":1091,"text":"e","textLength":1,"docVersion":461}
+{"t":1794521582600,"file":"auction.cpp","type":"insert","rangeStart":1092,"rangeEnd":1092,"text":"e","textLength":1,"docVersion":462}
+{"t":1794521582757,"file":"auction.cpp","type":"insert","rangeStart":1093,"rangeEnd":1093,"text":"r","textLength":1,"docVersion":463}
+{"t":1794521582871,"file":"auction.cpp","type":"insert","rangeStart":1094,"rangeEnd":1094,"text":".","textLength":1,"docVersion":464}
+{"t":1794521583903,"file":"auction.cpp","type":"file-save"}
+{"t":1794521585965,"file":"auction.cpp","type":"insert","rangeStart":1095,"rangeEnd":1095,"text":"reset_auctioneer","textLength":16,"docVersion":465}
+{"t":1794521587000,"file":"auction.cpp","type":"file-save"}
+{"t":1794521587008,"file":"auction.cpp","type":"insert","rangeStart":1111,"rangeEnd":1111,"text":"()","textLength":2,"docVersion":466}
+{"t":1794521587115,"file":"auction.cpp","type":"replace","rangeStart":1112,"rangeEnd":1113,"text":")","textLength":1,"docVersion":467}
+{"t":1794521587508,"file":"auction.cpp","type":"insert","rangeStart":1113,"rangeEnd":1113,"text":";","textLength":1,"docVersion":468}
+{"t":1794521588526,"file":"auction.cpp","type":"file-save"}
