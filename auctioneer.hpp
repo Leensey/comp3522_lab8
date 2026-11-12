@@ -46,4 +46,7 @@ public:
 
     // TODO: add any getters you need (e.g. getHighestBid(), getHighestBidder())
     // so Auction can print the auction result and bidder summary.
+
+    double getHighestBid() const;
+    Bidder* getHighestBidder() const;
 };
