@@ -1,0 +1,22 @@
+# Compiled binaries
+lab8
+lab8.exe
+a.out
+a.exe
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# CMake build directory
+build/
+out/
+
+# VS Code machine-specific settings
+# .vscode/
+.vscode/**/*
+# ...but keep CodeRewind's session logs, since those get submitted for review
+!.vscode/keylog/
+!.vscode/keylog/**
