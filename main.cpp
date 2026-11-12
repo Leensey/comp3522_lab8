@@ -85,10 +85,8 @@ while (choice == 1)
 
 }
 
-  cout << "Starting Auction!!" << endl;
-  cout << "------------------" << endl;
   Auction my_auction(bidders);
-  my_auction.simulate_auction("Antique Vase", 100);
+  my_auction.simulate_auction(item, start_price);
 
   for (Bidder *bidder : bidders)
   {

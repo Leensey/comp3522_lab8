@@ -48,6 +48,6 @@ void Auctioneer::printBidders() const
 {
     for(auto& b : bidders)
     {
-        cout << b;
+        cout << *b;
     }
 }

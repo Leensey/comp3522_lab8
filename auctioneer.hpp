@@ -14,7 +14,6 @@ class Auctioneer {
     vector<Bidder *> bidders;
     double highest_bid = 0;
     Bidder *highest_bidder = nullptr;
-
 public:
     Auctioneer() = default;
 
