@@ -630,3 +630,28 @@
 {"t":1794520512780,"file":"bidder.cpp","type":"file-save"}
 {"t":1794520517812,"file":"bidder.cpp","type":"window-blur"}
 {"t":1794520520073,"file":"bidder.cpp","type":"window-focus"}
+{"t":1794520548962,"file":"bidder.cpp","type":"window-blur"}
+{"t":1794520558587,"file":"bidder.cpp","type":"window-focus"}
+{"t":1794520574608,"file":"bidder.cpp","type":"window-blur"}
+{"t":1794520577621,"file":"auctioneer.hpp","type":"replace","rangeStart":0,"rangeEnd":1391,"text":"#pragma once\r\n\r\n#include <vector>\r\n#include \"bidder.hpp\"\r\n\r\nusing namespace std;\r\n\r\n/*\r\nAuctioneer is the \"subject\" in our simplified observer pattern. It tracks\r\nthe current highest bid and bidder, and notifies every registered Bidder\r\n(except whoever just bid) whenever a new, higher bid is accepted.\r\n*/\r\nclass Auctioneer {\r\n    vector<Bidder *> bidders;\r\n    double highest_bid = 0;\r\n    Bidder *highest_bidder = nullptr;\r\n\r\npublic:\r\n    Auctioneer() = default;\r\n\r\n    /*\r\n    Adds a bidder to the list of tracked bidders.\r\n    :param bidder: the Bidder to register.\r\n    */\r\n    void register_bidder(Bidder *bidder);\r\n\r\n    /*\r\n    Resets the auctioneer. Removes all the bidders and resets the\r\n    highest bid back to 0.\r\n    */\r\n    void reset_auctioneer();\r\n\r\n    /*\r\n    Notifies every registered bidder, except the one who just placed the\r\n    current highest bid, by calling their update() function.\r\n    */\r\n    void notify_bidders();\r\n\r\n    /*\r\n    Accepts a new bid. If it's higher than the current highest bid, records\r\n    it as the new highest bid/bidder and notifies the other bidders.\r\n    :param bid: the bid amount.\r\n    :param bidder: the Bidder placing the bid (nullptr for the opening bid).\r\n    */\r\n    void accept_bid(double bid, Bidder *bidder = nullptr);\r\n\r\n    // TODO: add any getters you need (e.g. getHighestBid(), getHighestBidder())\r\n    // so Auction can print the auction result and bidder summary.\r\n};\r\n","textLength":1440,"docVersion":6}
+{"t":1794520577627,"file":"auctioneer.hpp","type":"insert","rangeStart":1436,"rangeEnd":1436,"text":"\r\n    double getHighestBid() const;\r\n    Bidder* getHighestBidder() const;\r\n","textLength":76,"docVersion":7}
+{"t":1794520584285,"file":"bidder.cpp","type":"window-focus"}
+{"t":1794520642661,"file":"bidder.cpp","type":"window-blur"}
+{"t":1794520647795,"file":"bidder.cpp","type":"window-focus"}
+{"t":1794520657045,"file":"auctioneer.cpp","type":"file-open"}
+{"t":1794520667542,"file":"bidder.cpp","type":"window-blur"}
+{"t":1794520670296,"file":"bidder.cpp","type":"window-focus"}
+{"t":1794520676115,"file":"bidder.cpp","type":"cut-command","size":24}
+{"t":1794520676124,"file":"bidder.cpp","type":"delete","rangeStart":607,"rangeEnd":631,"text":"","textLength":0,"docVersion":344}
+{"t":1794520676792,"file":"bidder.cpp","type":"delete","rangeStart":606,"rangeEnd":607,"text":"","textLength":0,"docVersion":345}
+{"t":1794520677836,"file":"bidder.cpp","type":"file-save"}
+{"t":1794520678659,"file":"bidder.cpp","type":"insert","rangeStart":606,"rangeEnd":606,"text":" ","textLength":1,"docVersion":346}
+{"t":1794520679350,"file":"bidder.cpp","type":"insert","rangeStart":607,"rangeEnd":607,"text":"!","textLength":1,"docVersion":347}
+{"t":1794520680106,"file":"bidder.cpp","type":"insert","rangeStart":608,"rangeEnd":608,"text":"=","textLength":1,"docVersion":348}
+{"t":1794520680265,"file":"bidder.cpp","type":"insert","rangeStart":609,"rangeEnd":609,"text":" ","textLength":1,"docVersion":349}
+{"t":1794520680593,"file":"bidder.cpp","type":"insert","rangeStart":610,"rangeEnd":610,"text":"t","textLength":1,"docVersion":350}
+{"t":1794520680652,"file":"bidder.cpp","type":"insert","rangeStart":611,"rangeEnd":611,"text":"h","textLength":1,"docVersion":351}
+{"t":1794520680749,"file":"bidder.cpp","type":"insert","rangeStart":612,"rangeEnd":612,"text":"i","textLength":1,"docVersion":352}
+{"t":1794520680828,"file":"bidder.cpp","type":"insert","rangeStart":613,"rangeEnd":613,"text":"s","textLength":1,"docVersion":353}
+{"t":1794520681678,"file":"bidder.cpp","type":"replace","rangeStart":610,"rangeEnd":614,"text":"this","textLength":4,"docVersion":354}
+{"t":1794520682697,"file":"bidder.cpp","type":"file-save"}

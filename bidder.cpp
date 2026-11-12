@@ -11,7 +11,7 @@ void Bidder::update(Auctioneer *auctioneer) {
     // If all three hold, compute the new bid and call
     // auctioneer->accept_bid(new_bid, this).
 
-    if (auctioneer->getHighestBidder() != this->getHighestBid())
+    if (auctioneer->getHighestBidder() != this)
     {
         double new_bid = auctioneer->getHighestBid() * bid_increase_perc;
 
