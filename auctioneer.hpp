@@ -44,6 +44,9 @@ public:
     */
     void accept_bid(double bid, Bidder *bidder = nullptr);
 
+    /*Prints bidders after auction is concluded.*/
+    void printBidders() const;
+
     // TODO: add any getters you need (e.g. getHighestBid(), getHighestBidder())
     // so Auction can print the auction result and bidder summary.
 

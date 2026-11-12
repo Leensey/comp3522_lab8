@@ -38,7 +38,7 @@ public:
     // Auction can print the end-of-auction summary.
 
     friend ostream& operator<<(ostream &os, const Bidder& bidder) {
-        os << bidder.name;
+        os << "Bidder: " << bidder.name << ", Highest bid: " << "$" << bidder.highest_bid << endl;
         return os;
     }
 };

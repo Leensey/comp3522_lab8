@@ -43,3 +43,11 @@ Bidder* Auctioneer::getHighestBidder() const
 {
     return highest_bidder;
 }
+
+void Auctioneer::printBidders() const
+{
+    for(auto& b : bidders)
+    {
+        cout << b;
+    }
+}
